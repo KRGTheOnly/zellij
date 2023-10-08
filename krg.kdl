@@ -1,0 +1,26 @@
+// layout {
+//     pane size=10 borderless=true {
+        // plugin location="zellij:status-bar" borderless=true
+    // }
+    // pane {
+    //     plugin location="zellij:status-bar" borderless=true
+    // }
+    // pane size=1 borderless=true {
+    //     plugin location="zellij:tab-bar"
+    // }
+    // pane
+    // pane size=2 borderless=true {
+    //     plugin location="zellij:status-bar"
+    // }
+// }
+
+layout {
+    // pane size=1 borderless=true {
+    //  plugin location="zellij:compact-bar"
+    //  // plugin location="zellij:tab-bar"
+    // }
+    pane borderless=true
+    // pane borderless=false {
+    // }
+}
+

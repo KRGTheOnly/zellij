@@ -1,0 +1,60 @@
+keybinds clear-defaults=true {
+    unbind "Ctrl o"
+    normal {
+        bind "Alt h" { MoveFocus "Left"; }
+        bind "Alt ;" { MoveFocus "Right"; }
+        bind "Alt j" { MoveFocus "Down"; }
+        bind "Alt k" { MoveFocus "Up"; }
+        bind "Alt f" { ToggleFocusFullscreen; }
+        bind "Alt H" { Resize "Increase Left"; }
+        bind "Alt J" { Resize "Increase Down"; }
+        bind "Alt K" { Resize "Increase Up"; }
+        bind "Alt L" { Resize "Increase Right"; }
+        bind "Alt w" { NewPane "Right"; }
+        bind "Alt e" { NewPane "Down"; }
+        bind "Ctrl l" { Clear; Write 10; }
+        bind "Alt q" { CloseFocus; }
+        bind "Alt p" { EditScrollback; }
+        bind "Alt d" { HalfPageScrollDown; }        
+        bind "Alt u" { HalfPageScrollUp; }        
+    }
+
+plugins {
+    tab-bar { path "tab-bar"; }
+    status-bar { path "status-bar"; }
+    strider { path "strider"; }
+    compact-bar { path "compact-bar"; }
+    session-manager { path "session-manager"; }
+}
+
+ui {
+    pane_frames {
+        hide_session_name true
+    }
+}
+
+default_layout "krg"
+
+on_force_close "quit"
+
+
+ themes {
+     krg {
+         fg 179 179 179
+         bg 18 18 18
+         red 255 85 85
+         green 255 77 77
+         yellow 241 250 140
+         blue 98 114 164
+         magenta 255 121 198
+         orange 255 184 108
+         cyan 139 233 253
+         black 0 0 0
+         white 255 255 255
+     }
+ }
+
+ theme "krg"
+
+layout_dir "/home/krg/.config/zellij"
+
